@@ -25,31 +25,65 @@
                                     <action selector="recordAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6g7-7I-VNi"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUk-Bn-eeK">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="audioStop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GlH-LG-lp7"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZV-UM-gSd">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.89984990070842441" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="cUk-Bn-eeK" firstAttribute="top" secondItem="i1F-UG-AH6" secondAttribute="bottom" constant="166" id="Yv0-n2-Owr"/>
                             <constraint firstAttribute="centerX" secondItem="i1F-UG-AH6" secondAttribute="centerX" id="cYk-HC-UTh"/>
+                            <constraint firstAttribute="centerX" secondItem="cUk-Bn-eeK" secondAttribute="centerX" id="cYt-Ys-njj"/>
+                            <constraint firstItem="OZV-UM-gSd" firstAttribute="top" secondItem="i1F-UG-AH6" secondAttribute="bottom" constant="8" id="kug-GW-BW1"/>
+                            <constraint firstAttribute="centerX" secondItem="OZV-UM-gSd" secondAttribute="centerX" constant="-6.5" id="lAX-my-XwC"/>
                             <constraint firstAttribute="centerY" secondItem="i1F-UG-AH6" secondAttribute="centerY" id="tUh-rG-5Jg"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="i1F-UG-AH6"/>
+                                <exclude reference="cUk-Bn-eeK"/>
+                                <exclude reference="OZV-UM-gSd"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="cYk-HC-UTh"/>
                                 <exclude reference="tUh-rG-5Jg"/>
+                                <exclude reference="kug-GW-BW1"/>
+                                <exclude reference="lAX-my-XwC"/>
+                                <exclude reference="Yv0-n2-Owr"/>
+                                <exclude reference="cYt-Ys-njj"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="i1F-UG-AH6"/>
+                                <include reference="cUk-Bn-eeK"/>
+                                <include reference="OZV-UM-gSd"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="cYk-HC-UTh"/>
                                 <include reference="tUh-rG-5Jg"/>
+                                <include reference="kug-GW-BW1"/>
+                                <include reference="lAX-my-XwC"/>
+                                <include reference="Yv0-n2-Owr"/>
+                                <include reference="cYt-Ys-njj"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="recordingInProgress" destination="OZV-UM-gSd" id="Hem-I9-hAa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,5 +91,6 @@
     </scenes>
     <resources>
         <image name="Microphone" width="100" height="100"/>
+        <image name="Stop" width="50" height="50"/>
     </resources>
 </document>
