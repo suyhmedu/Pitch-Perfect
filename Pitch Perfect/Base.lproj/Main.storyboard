@@ -38,7 +38,7 @@
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZV-UM-gSd">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -58,12 +58,12 @@
                                 <exclude reference="OZV-UM-gSd"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="cYk-HC-UTh"/>
-                                <exclude reference="tUh-rG-5Jg"/>
                                 <exclude reference="kug-GW-BW1"/>
                                 <exclude reference="lAX-my-XwC"/>
                                 <exclude reference="Yv0-n2-Owr"/>
                                 <exclude reference="cYt-Ys-njj"/>
+                                <exclude reference="cYk-HC-UTh"/>
+                                <exclude reference="tUh-rG-5Jg"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -73,12 +73,12 @@
                                 <include reference="OZV-UM-gSd"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="cYk-HC-UTh"/>
-                                <include reference="tUh-rG-5Jg"/>
                                 <include reference="kug-GW-BW1"/>
                                 <include reference="lAX-my-XwC"/>
                                 <include reference="Yv0-n2-Owr"/>
                                 <include reference="cYt-Ys-njj"/>
+                                <include reference="cYk-HC-UTh"/>
+                                <include reference="tUh-rG-5Jg"/>
                             </mask>
                         </variation>
                     </view>
@@ -91,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1173" y="224"/>
+            <point key="canvasLocation" x="1167" y="224"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6eW-Mm-nal">
@@ -102,6 +102,7 @@
                         <viewControllerLayoutGuide type="bottom" id="G4n-z5-F7K"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8mN-y2-VDi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
